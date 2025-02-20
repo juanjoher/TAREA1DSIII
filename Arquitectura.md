@@ -3,6 +3,8 @@
 ## 1. Introducción  
 Este documento describe la arquitectura inicial del sistema de gestión de órdenes y entregas, incluyendo requisitos funcionales, requisitos de calidad y restricciones clave que deben ser consideradas en el diseño del software.
 
+
+**EQUIPO 11**
 **Integrantes:**     
 Juan José Hernández 2259500\
 			Juan José Gallego 2259433\
@@ -40,7 +42,7 @@ Los requisitos de calidad se presentan en forma de **historias de calidad**, sig
 | **RQ-01** | Desarrollador            | Se solicita modificar la lógica de asignación de pedidos para incluir nuevos criterios de prioridad.     | Código y configuración de reglas de negocio.                    | Tiempo de ejecución     | Se debe modificar, probar y desplegar la nueva lógica de asignación.   | El esfuerzo requerido no debe superar 2 horas de trabajo y no deben generarse más de 2 defectos nuevos. |
 | **RQ-02** | _Ingeniero de seguridad_ | _Proteger las credenciales y datos de clientes frente a algunos ataques de inyección_                    | _Mecanismos de cifrado, base de datos y código_                 | _Pruebas de seguridad_  | _Se debe aplicar cifrado fuerte, validar entradas contra inyecciones._ | _El esfuerzo que se requiere es que deben de trabajarlo hasta que no se encuentren vulnerabilidades_    |
 | **RQ-03** | _DevOps_                 | _El sistema debe de poder escalar horizontalmente para soportar un 50% de aumento en la demanda mensual_ | _Configuración de la infraestructura y balanceamiento de carga_ | _Entorno de producción_ | _Se debe de implementar un autoescalado y un balanceo dinámico_        | _La infraestructura debe adaptarse automáticamente sin intervención manual._                 
-| **RQ-04** | _Arquitecto de software_  | _El sistema debe garantizar una alta disponibilidad del servicio, minimizando el tiempo de inactividad._ | _Infraestructura y monitoreo _ | _Producción_   | _Se debe implementar una arquitectura redundante con monitoreo proactivo._ | _El tiempo de inactividad no debe superar 5 minutos al mes._ |
+| **RQ-04** | _Arquitecto de software_  | _El sistema debe garantizar una alta disponibilidad del servicio, minimizando el tiempo de inactividad._ | _Infraestructura y monitoreo_ | _Producción_   | _Se debe implementar una arquitectura redundante con monitoreo proactivo._ | _El tiempo de inactividad no debe superar 5 minutos al mes._ |
 
 
 >  **Instrucciones:**  
@@ -57,9 +59,9 @@ Las restricciones establecen **limitaciones** en la arquitectura del sistema, ya
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Tecnológica             | El sistema debe desarrollarse utilizando **Spring Boot y PostgreSQL**, debido a la infraestructura actual de la empresa y su compatibilidad con otros sistemas internos. |
 | _Regulatoria_           | _Se debe de cumplir con una norma de seguridad como la ISO  27001 para la protección de datos personales_                                                                |
-| _Tecnológica_           | el sistema debe estar alojado en repositorios de github. |
-| _de infraestructura_    | se debe optimizar el uso de recursos en la nube, para utilizar el mínimo espacio y la minima RAM posible. |
-| _de negocio_            | la experiencia de usuario debe garantizar la completa informacion sobre los pedidos para generar confianza en el usuario. |
+| _Tecnológica_           | _el sistema debe estar alojado en repositorios de github._ |
+| _de infraestructura_    | _se debe optimizar el uso de recursos en la nube, para utilizar el mínimo espacio y la minima RAM posible._ |
+| _de negocio_            | _la experiencia de usuario debe garantizar la completa informacion sobre los pedidos para generar confianza en el usuario._ |
 
 
 
