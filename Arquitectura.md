@@ -3,13 +3,12 @@
 ## 1. Introducción  
 Este documento describe la arquitectura inicial del sistema de gestión de órdenes y entregas, incluyendo requisitos funcionales, requisitos de calidad y restricciones clave que deben ser consideradas en el diseño del software.
 
-**Equipo:**  1\
 **Integrantes:**     
 Juan José Hernández 2259500\
 			Juan José Gallego 2259433\
 			Marlon Astudillo 2259462\
-			Laura Peñaloza \
-			Laura Couicue  \
+			Laura Peñaloza 2259485\
+			Laura Couicue  2276652\
 **Fecha:** _20/02/2025_  
 
 ---
@@ -18,12 +17,13 @@ Juan José Hernández 2259500\
 Los requisitos funcionales se presentan en forma de **historias de usuario**, especificando los **criterios de aceptación**.
 
 ### **Historias de Usuario**
-| **ID**    | **Historia de Usuario**                                                                                                           | **Criterios de Aceptación**                                                                                                                                                                                                                                                                                            |
+| **Número**    | **Historia de Usuario**                                                                                                           | **Criterios de Aceptación**                                                                                                                                                                                                                                                                                            |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **US-01** | Como cliente registrado, quiero iniciar sesión en la plataforma para acceder a mi historial de pedidos y realizar nuevas compras. | - El usuario debe ingresar un correo y contraseña válidos.<br>- Si las credenciales son correctas, el usuario es redirigido a su perfil.<br>- Si las credenciales son incorrectas, se muestra un mensaje de error sin revelar detalles específicos.<br>- El usuario puede solicitar un restablecimiento de contraseña. |
-| **US-02** | _Como cliente, quiero que la plataforma me permita agregar al carrito los productos requeridos_                                   | _- El usuario debe ingresar productos al carrito<br>- El usuario debe ingresar que cantidad requiere de cada producto_                                                                                                                                                                                                 |
-| **US-03** | _Como cliente registrado, quiero que la plataforma me permita realizar el pago con diferentes métodos_                            | _- El usuario debe de elegir el método de pago <br>- El usuario debe de digitar sus datos bancarios_                                                                                                                                                                                                                   |
-|           |                                                                                                                                   |                                                                                                                                                                                                                                                                                                                        |
+| **US-01** | _Como cliente registrado, quiero iniciar sesión en la plataforma para acceder a mi historial de pedidos y realizar nuevas compras._ | _- El usuario debe ingresar un correo y contraseña válidos.<br>- Si las credenciales son correctas, el usuario es redirigido a su perfil.<br>- Si las credenciales son incorrectas, se muestra un mensaje de error sin revelar detalles específicos.<br>- El usuario puede solicitar un restablecimiento de contraseña._ |
+| **US-02** | _Como cliente registrado, quiero que la plataforma me permita agregar al carrito los productos para poder realizar mi compra con éxito._                                   | _- El usuario debe agregar productos al carrito.<br>- El usuario debe ingresar que cantidad requiere de cada producto antes de agregarlo al carrito. <br> -El usuario debe poder ver un resumen de los productos agregados al carrito, incluyendo cantidad y precio total. <br> -El usuario debe poder modificar la cantidad o eliminar productos del carrito antes de finalizar la compra._                                                                                                                                                                                                 |
+| **US-03** | _Como cliente registrado, quiero que la plataforma me permita elegir entre diferentes métodos de pago para tener opciones a la hora de realizar el pago._                            | _- El usuario debe elegir entre los métodos de pago disponibles. <br> -El usuario debe digitar sus datos bancarios. <br> -El sistema debe validar la información ingresada antes de procesar el pago. <br> -El usuario debe recibir una notificación de confirmación del pago realizado._                                                                                                                                                                                                         
+| **US-04** | _Como cliente registrado, quiero que la plataforma me permita filtrar los productos para hacer más fáci el proceso de compra._                            | _- El usuario debe poder filtrar por la categoria del producto. <br> -El usuario debe poder combinar múltiples filtros en una misma búsqueda. <br> -Los resultados deben actualizarse dinámicamente según los filtros aplicados._                                                                                                                                                                                                         
+
 
 >  **Instrucciones:**  
 > - Completar al menos **tres historias de usuario**.  
